@@ -13,7 +13,7 @@ export function installTypescript() {
       throw new Error("Must run this in a directory with a package.json");
     }
 
-    exec("yarn add --dev typescript@4.6.4", (err, stdout) => {
+    exec("yarn add --dev typescript@4.9.5", (err, stdout) => {
       if (err) {
         logger.error("Real Err:", err);
         return reject(err);
